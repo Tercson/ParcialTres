@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtbuscar"
+                android:layout_weight="1"
+                android:hint="Buscar por Nombre" />
+
+            <Button
+                android:text="Buscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnbuscar"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:text="REGISTRO DE PRODUCTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtnombre"
+            android:hint="Nombre del producto" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtprecio"
+            android:hint="Precio" />
+
+        <Button
+            android:text="Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnregistrar"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
